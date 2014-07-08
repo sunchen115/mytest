@@ -11,7 +11,7 @@ get '/posts' do
   haml :index,:locals => {:htl_input=>htlinput,:htl_output=>cheapest_htl} 
 end
 get '/hello' do
-    'hello world'
+    'hello world 2'
 end
 
 get '/' do

@@ -7,6 +7,14 @@ get '/posts' do
 #htlinput = 'Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)'
   puts htlinput
   cheapest_htl = htl_sys.find_cheapes_hotel(htlinput)
-  haml :index,:locals => {:htl_input=>htlinput,:htl_output=>cheapest_htl} 
-  #"<h1> HotelSystem</h1><br/>"+"<label>LiveInfo:</label><input type='text' id='liv_info'/><input type='button' id='search_cheapest' value='Search'</input>"
+  params.to_s
+#  haml :index,:locals => {:htl_input=>htlinput,:htl_output=>cheapest_htl} 
+end
+get '/hello' do
+    'hello'
+end
+
+get '/' do
+   erb:index
+  #"<h1> HotelSystem</h1><br/>"+"<form/><label>LiveInfo:</label><input type='text' id='liv_info'/><input type='submit' id='search_cheapest' value='Search' href='test/test.rb'</input></form>"
 end

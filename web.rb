@@ -15,6 +15,7 @@ get '/hello' do
 end
 
 get '/' do
+   @default_v = 'Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)'
    erb:index
   #"<h1> HotelSystem</h1><br/>"+"<form/><label>LiveInfo:</label><input type='text' id='liv_info'/><input type='submit' id='search_cheapest' value='Search' href='test/test.rb'</input></form>"
 end

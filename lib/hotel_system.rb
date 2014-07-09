@@ -16,7 +16,7 @@ class HotelSystem
   end
 
 
-  def find_cheapes_hotel(live_str)
+  def find_cheapest_hotel(live_str)
     revers_info = ReservParser.extract_reserv_info(live_str)
     if revers_info.valid?
       @hotels_list.sort! { |a, b| (a.compute_price(revers_info)<=>b.compute_price(revers_info)).nonzero? || (b.rating<=>a.rating) }.first.name

@@ -21,7 +21,7 @@ if [ -z $listen_port ];then
     exit 1
 fi
 
-nohup rackup ./config.ru -p $listen_port >/dev/null &
+nohup rackup ./config.ru -p $listen_port >./server.log &
 index=1
 while (($index<$timeout))
 do

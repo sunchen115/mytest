@@ -1,0 +1,36 @@
+#!/bin/sh
+function show_help
+{
+ echo './server_control -p $port -t $timeout'
+}
+listen_port=''
+timeout=20
+while getopts "p:t:h" opt
+do
+ case $opt in
+     'p') listen_port=$OPTARG;;
+     't')
+         timeout=$OPTARG
+         ;;
+     'h') show_help
+ esac
+     done
+
+if [ -z $listen_port ];then
+    show_help
+    exit 1
+fi
+
+nohup rackup ./config.ru -p $listen_port >/dev/null &
+index=1
+while (($index<$timeout))
+do
+    index=$(($index+1))
+    curl "http://localhost:$listen_port"
+    if [ $? == 0 ];then
+        break
+    else
+        echo 'curl is not suc'
+        sleep 1
+    fi
+done

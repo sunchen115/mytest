@@ -6,6 +6,7 @@ end
 
 desc 'run spec'
 task :spec =>:install do
+<<<<<<< HEAD
 sh('rspec ./spec')
 end
 
@@ -14,4 +15,9 @@ task :spec_user =>:install do
 sh('./server_control -p 1234 -t 20 >/dev/null &')
 sh('bundle exec rspec ./spec_user')
 sh("kill -9 `ps |grep rackup|grep -v grep| awk '{print $1}'`")
+=======
+#bundle install
+sh('rspec ./spec')
+puts 'spec'
+>>>>>>> heroku/master
 end

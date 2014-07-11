@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+<<<<<<< HEAD
     childprocess (0.5.3)
       ffi (~> 1.0, >= 1.0.11)
     daemons (1.1.9)
@@ -10,11 +11,18 @@ GEM
     haml (4.0.5)
       tilt
     multi_json (1.10.1)
+=======
+    daemons (1.1.9)
+    eventmachine (1.0.3)
+    haml (4.0.5)
+      tilt
+>>>>>>> heroku/master
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+<<<<<<< HEAD
     rake (10.3.2)
     rdiscount (2.1.7.1)
     rspec (3.0.0)
@@ -35,6 +43,9 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0.4)
+=======
+    rdiscount (2.1.7.1)
+>>>>>>> heroku/master
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.5)
@@ -46,7 +57,10 @@ GEM
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
     tilt (1.4.1)
+<<<<<<< HEAD
     websocket (1.0.7)
+=======
+>>>>>>> heroku/master
 
 PLATFORMS
   ruby
@@ -55,10 +69,14 @@ DEPENDENCIES
   haml
   rack
   rack-test
+<<<<<<< HEAD
   rake
   rdiscount
   rspec
   selenium-webdriver
+=======
+  rdiscount
+>>>>>>> heroku/master
   shotgun
   sinatra
   thin

@@ -6,6 +6,10 @@ gem 'thin'      # 应用服务器
 gem 'shotgun'   # 重启服务器
 gem 'rack'
 gem 'rack-test'
+<<<<<<< HEAD
 gem 'selenium-webdriver'
 gem 'rspec'
 gem 'rake'
+=======
+
+>>>>>>> heroku/master

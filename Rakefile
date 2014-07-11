@@ -6,7 +6,7 @@ end
 
 desc 'run spec'
 task :spec =>:install do
-sh('rspec ./spec')
+sh('bundle exec rspec ./spec')
 end
 
 desc 'run spec_user'

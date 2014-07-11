@@ -52,12 +52,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.6)
   haml
   rack
   rack-test
-  rake
+  rake (= 10.3.2)
   rdiscount
-  rspec
+  rspec (= 3.0.0)
   selenium-webdriver
   shotgun
   sinatra

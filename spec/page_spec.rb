@@ -13,10 +13,6 @@ describe 'Hotel websit' do
 
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> heroku/master
   it 'should show index correctly' do
 
     reps = @req.get '/'
